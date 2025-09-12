@@ -3,12 +3,21 @@
 <head>
     <title>Géolocalisation Parents</title>
     <link rel="stylesheet" href="/static/style.css">
+    <!-- Leaflet CSS pour la carte -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
-    <h1>Test Géolocalisation</h1>
+    <h1>Géolocalisation Parents</h1>
+    
     <button onclick="getLocation()">Obtenir ma position</button>
+    
     <div id="result"></div>
     
+    <!-- Container pour la carte -->
+    <div id="map"></div>
+    
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="/static/app.js"></script>
 </body>
 </html>
